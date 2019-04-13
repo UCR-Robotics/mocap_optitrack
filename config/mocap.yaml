@@ -4,16 +4,26 @@
 #
 rigid_bodies:
     '1':
-        pose: Robot_1/pose
-        pose2d: Robot_1/ground_pose
-        child_frame_id: Robot_1/base_link
-        parent_frame_id: world
+        pose: cf1/cf1
+        child_frame_id: vicon/cf1/cf1
+        parent_frame_id: /world
     '2':
-        pose: Robot_2/pose
-        pose2d: Robot_2/ground_pose
-        child_frame_id: Robot_2/base_link
-        parent_frame_id: world
+        pose: cf2/cf2
+        child_frame_id: vicon/cf2/cf2
+        parent_frame_id: /world
+    '3':
+        pose: cf3/cf3
+        child_frame_id: vicon/cf3/cf3
+        parent_frame_id: /world
+    '4':
+        pose: cf4/cf4
+        child_frame_id: vicon/cf4/cf4
+        parent_frame_id: /world
+    '5':
+        pose: cf5/cf5
+        child_frame_id: vicon/cf5/cf5
+        parent_frame_id: /world
 optitrack_config:
-        multicast_address: 224.0.0.1
+        multicast_address: 239.255.42.99
         command_port: 1510
-        data_port: 9000
+        data_port: 1511
